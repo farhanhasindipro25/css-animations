@@ -1,0 +1,23 @@
+body {
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .box {
+    background: white;
+    width: 100px;
+    height: 100px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .box:hover {
+    background: red;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+  }
