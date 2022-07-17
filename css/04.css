@@ -1,0 +1,53 @@
+@keyframes sliding{
+    0%{
+        background-color: rgb(255, 139, 97);
+        top: -35px;
+        left: -35px;
+        transform: scale(0.25);
+    }
+    25%{
+        top: 225px;
+        background-color: red;
+        transform: scale(0.5) translateX(300px) translateY(40px) skew(30deg);
+    }
+    50%{
+        top: -15px;
+        background-color: yellow;
+        transform: scale(0.75);
+    }
+    75%{
+        top:200px;
+        background-color: lawngreen;
+        transform:skew(200deg);
+    }
+    100% {
+        left: 847px;
+        top: 10px;
+        background-color: cyan;
+        transform: scale(1.25);
+    }
+}
+body{
+    background-color: rgb(4, 2, 22);
+}
+.stage{
+    width: 960px;
+    height: 300px;
+    margin: 450px;
+    margin-top: 100px;
+    background-color: rgb(1, 1, 10);
+}
+.ball{
+    width: 100px;
+    height: 100px;
+    background-color: limegreen;
+    border-radius: 50%;
+    animation: sliding 1.5s ease-in-out 0.2s infinite alternate;
+    animation-play-state: running;
+    position: relative;
+}
+h2{
+    margin-top: 200px;
+    text-align: center;
+    color: aliceblue;
+}
